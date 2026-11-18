@@ -1,0 +1,21 @@
+{
+    "i2v": true,
+    "use_audio": true,
+    "random_prefix_frames": true,
+    "sp_size": 1,
+    "text_encoder_path": "/tmp/pretrained_models/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth",
+    "image_encoder_path": "None",
+    "dit_path": "/tmp/pretrained_models/Wan2.1-T2V-1.3B/diffusion_pytorch_model.safetensors",
+    "vae_path": "/tmp/pretrained_models/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth",
+    "wav2vec_path": "/tmp/pretrained_models/wav2vec2-base-960h",
+    "model_config": {
+        "in_dim": 33
+    },
+    "lora_target_modules": "q,k,v,o,ffn.0,ffn.2",
+    "init_lora_weights": "kaiming",
+    "lora_rank": 128,
+    "lora_alpha": 64.0,
+    "use_gradient_checkpointing": true,
+    "use_gradient_checkpointing_offload": false,
+    "train_architecture": "lora"
+}

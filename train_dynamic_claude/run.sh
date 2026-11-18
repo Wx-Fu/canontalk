@@ -11,7 +11,7 @@ RUN=${RUN:-train_dynamic_claude/runs/vco_v2}
 INIT=${INIT:-train_dynamic_claude/runs/vco_a/step_0030000.pt}   # v2 warm start; INIT= for scratch
 AVA=${AVA-"--ava-root data/ava256_rgb_4TB --ava-pack data_cache/ava_packs"}   # AVA= to disable
 EXTRA=${EXTRA:-}
-export OMP_NUM_THREADS=4 PYTHONPATH=$PWD:$PWD/OmniAvatar
+export OMP_NUM_THREADS=4 PYTHONPATH=$PWD:$PWD/vendor/omniavatar
 
 case "${1:-}" in
   prepare)   # one process per GPU (parser head crops), ~30-60 min; then merge

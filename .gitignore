@@ -1,9 +1,20 @@
 /*
 !/.gitignore
+!/README.md
 !/train_static_claude/
 !/train_dynamic_claude/
+!/model/
+!/vendor/
 
 /train_static_claude/runs/
 /train_dynamic_claude/runs/
+/vendor/*
+!/vendor/omniavatar/
+/vendor/omniavatar/*
+!/vendor/omniavatar/OmniAvatar/
+!/vendor/omniavatar/LICENSE.txt
+!/vendor/omniavatar/requirements.txt
+/model/*
+!/model/config.json
 **/__pycache__/
 *.py[cod]

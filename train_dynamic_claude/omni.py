@@ -14,7 +14,7 @@ import torch.nn.functional as F
 from torch import nn
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "OmniAvatar"))
+sys.path.insert(0, str(ROOT / "vendor" / "omniavatar"))
 WAN = "/apdcephfs_nj8/share_305278643/wenxinfu/models/omniavatar/Wan2.1-T2V-1.3B"
 WAV2VEC = "/apdcephfs_nj8/share_305278643/wenxinfu/models/interactive/wav2vec2-base-960h"
 OMNI = str(ROOT / "model")

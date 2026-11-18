@@ -6,7 +6,7 @@ from pathlib import Path
 
 import torch
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "OmniAvatar"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "vendor" / "omniavatar"))
 
 try:  # sequence-parallel helpers are unused at sp_size=1; stub them if xfuser is absent
     import xfuser  # noqa: F401
