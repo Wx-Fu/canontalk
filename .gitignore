@@ -1,0 +1,9 @@
+/*
+!/.gitignore
+!/train_static_claude/
+!/train_dynamic_claude/
+
+/train_static_claude/runs/
+/train_dynamic_claude/runs/
+**/__pycache__/
+*.py[cod]

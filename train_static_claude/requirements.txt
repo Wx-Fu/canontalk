@@ -1,0 +1,13 @@
+# train_static_claude — packages the code needs (CUDA build of torch for training)
+torch>=2.4            # SDPA with float attention bias, torch.get_autocast_dtype
+torchvision>=0.19
+transformers>=4.48    # Dinov2WithRegistersModel, SegformerForSemanticSegmentation
+huggingface_hub
+safetensors
+numpy
+opencv-python-headless>=4.8   # HEVC decode of EmoTalk3D .mov (ffmpeg backend), crops
+pillow>=11.3          # built-in AVIF decoding for Ava-256 (or: pillow-avif-plugin)
+lpips                 # perceptual loss (VGG)
+# optional
+pillow-avif-plugin    # only if pillow < 11.3
+pytest                # tests/
